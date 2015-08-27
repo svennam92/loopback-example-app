@@ -1,7 +1,7 @@
 ## Bluemix LoopBack Sample
-This is a sample LoopBack Node.js application which will use a modified [Node.js buildpack](https://github.com/svennam92/nodejs-buildpack) to run on Bluemix.  It starts strong-pm (StrongLoop process manager) in Bluemix to start and supervise your application. You can then use StrongLoop Arc to remotely manage your Bluemix application.
+This is a sample LoopBack Node.js application. It starts strong-pm (StrongLoop process manager) in Bluemix to start and supervise your application. You can then use StrongLoop Arc to remotely manage your Bluemix application.
 
-<img src="https://raw.githubusercontent.com/svennam92/loopback-example-app/master/LoopbackOverviewPNG.png" height="355">
+<img src="./LoopbackOverviewPNG.png" height="355">
 
 ### Deploy to Bluemix
 
@@ -9,7 +9,6 @@ This is a sample LoopBack Node.js application which will use a modified [Node.js
 
 When you click this button, Bluemix will clone this repository into an IBM DevOps Services project, set up the deployment pipeline, and push your application to Bluemix.  Your application will get deployed with two routes.
 ```
-<app_name>-arc.mybluemix.net	 # To access Arc for managing your application
 <app_name>.mybluemix.net         # To access your sample application
 <app_name>-pm.mybluemix.net      # To access Strong PM
 ```
