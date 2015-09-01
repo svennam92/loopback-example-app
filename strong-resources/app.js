@@ -2,7 +2,7 @@ var http = require('http'),
 httpProxy = require('http-proxy');
 
 // Create a proxy server with custom application logic
-var proxy = httpProxy.createProxyServer({changeOrigin: true});
+var proxy = httpProxy.createProxyServer({});
 proxy.on('error', function (err, req, res) {
 	  res.writeHead(500, {
 	    'Content-Type': 'text/plain'
