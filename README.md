@@ -11,6 +11,13 @@ When you click this button, Bluemix will clone this repository into an IBM DevOp
 <app_name>-pm.mybluemix.net      # To access Strong PM
 ```
 
+### Deploying Arc
+
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/strongloop-bluemix/arc-app.git)
+
+When you click this button, Bluemix will create and deploy an instance of StrongLoop Arc for your convenience.
+``
+
 ##### Connecting from Arc
 
 Once application is deployed, launch Arc locally:
