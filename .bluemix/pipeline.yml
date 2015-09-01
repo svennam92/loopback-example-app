@@ -15,5 +15,5 @@ stages:
       space: ${CF_SPACE}
       application: ${CF_APP}
     script: |
-      cf push "${CF_APP}" 
+      cf push -m 640M "${CF_APP}" 
       cf map-route "${CF_APP}" mybluemix.net -n "${CF_APP}"-pm 
