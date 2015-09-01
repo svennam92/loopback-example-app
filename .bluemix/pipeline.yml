@@ -33,4 +33,4 @@ stages:
       application: ${CF_APP}
     script: |
       cd .bluemix
-      cf push "${CF_APP}"  -n "${CF_APP}"-arc      
+      cf push "${CF_APP}"-arc -n "${CF_APP}"-arc      
