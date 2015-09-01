@@ -17,6 +17,13 @@ stages:
     script: |
       cf push "${CF_APP}" 
       cf map-route "${CF_APP}" mybluemix.net -n "${CF_APP}"-pm 
+- name: Deploy Arc
+  inputs:
+  - type: git
+    branch: master
+  triggers:
+    - type: commit
+  jobs:
   - name: Push Arc to Bluemix
     type: deployer
     target:
