@@ -13,6 +13,8 @@ proxy.on('error', function (err, req, res) {
 // If "-pm" is at the end of the app/domain name, or PM_URL matches the route,
 // proxy to the Process Manager. Otherwise, proxy to the application itself
 var server = http.createServer(function(req, res) {
+	
+	req.headers['Access-Control-Allow-Origin'] = "*"
 	if (req.headers.host.indexOf('-pm.') != -1){
 		proxy.web(req, res, { target: 'http://127.0.0.1:8701' });
 	}
