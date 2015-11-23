@@ -14,5 +14,5 @@ stages:
       organization: ${CF_ORGANIZATION}
       space: ${CF_SPACE}
       application: ${CF_APP}
-    script: |
+    script: |-
       cf push -m 640M "${CF_APP}"
